@@ -1,7 +1,11 @@
-import Image from "next/image";
+import Link from 'next/link'
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <h1>Welcome to Orbit06!</h1>
+    <div>
+      <h1>Welcome to Orbit06!</h1>
+      <Link href="/login">Login</Link>
+      <Link href="/signup">Sign Up</Link>
+    </div>
   );
 }
